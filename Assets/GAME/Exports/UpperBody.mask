@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UpperBody
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 1
+  - m_Path: Armature/ArmIK.L
+    m_Weight: 1
+  - m_Path: Armature/ArmIK.L/ArmPole.L
+    m_Weight: 1
+  - m_Path: Armature/ArmIK.L/ArmPole.L/ArmPole.L_end
+    m_Weight: 1
+  - m_Path: Armature/ArmIK.R
+    m_Weight: 1
+  - m_Path: Armature/ArmIK.R/ArmPole.R
+    m_Weight: 1
+  - m_Path: Armature/ArmIK.R/ArmPole.R/ArmPole.R_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegLeftIK
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegLeftIK/LegLeftIK_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegLeftStretch
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegLeftStretch/LegLeftStretch_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegRightIK
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegRightIK/LegRightIK_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegRightStretch
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegRightStretch/LegRightStretch_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.L/LegTop.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.L/LegTop.L/LegBottom.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.L/LegTop.L/LegBottom.L/LegFoot.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.L/LegTop.L/LegBottom.L/LegFoot.L/LegFoot.L_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.R/LegTop.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.R/LegTop.R/LegBottom.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.R/LegTop.R/LegBottom.R/LegFoot.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyHip/LegStretch.R/LegTop.R/LegBottom.R/LegFoot.R/LegFoot.R_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmLeftIK
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmLeftIK/ArmLeftIK_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmLeftStretch
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmLeftStretch/ArmLeftStretch_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmRightIK
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmRightIK/ArmRightIK_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmRightStretch
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmRightStretch/ArmRightStretch_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.L/ArmTop.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.L/ArmTop.L/ArmBottom.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.L/ArmTop.L/ArmBottom.L/ArmWrist1.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.L/ArmTop.L/ArmBottom.L/ArmWrist1.L/ArmWrist2.L
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.L/ArmTop.L/ArmBottom.L/ArmWrist1.L/ArmWrist2.L/ArmWrist2.L_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.R/ArmTop.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.R/ArmTop.R/ArmBottom.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.R/ArmTop.R/ArmBottom.R/ArmWrist1.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.R/ArmTop.R/ArmBottom.R/ArmWrist1.R/ArmWrist2.R
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/ArmStretch.R/ArmTop.R/ArmBottom.R/ArmWrist1.R/ArmWrist2.R/ArmWrist2.R_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.004
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.004/Bone.004_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.013
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.013/Bone.009
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.013/Bone.009/Bone.009_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.013/Bone.010
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.013/Bone.010/Bone.010_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.014
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.014/Bone.011
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.014/Bone.011/Bone.011_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.014/Bone.012
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.014/Bone.012/Bone.012_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.015
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.015/Bone.005
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.015/Bone.005/Bone.005_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.015/Bone.006
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.015/Bone.006/Bone.006_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.016
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.016/Bone.007
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.016/Bone.007/Bone.007_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.016/Bone.008
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadStretch/Bone.019/Bone.016/Bone.008/Bone.008_end
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadTarget
+    m_Weight: 1
+  - m_Path: Armature/BodyMain/BodyTop/HeadMain/HeadTarget/HeadTarget_end
+    m_Weight: 1
+  - m_Path: Armature/LegIK.L
+    m_Weight: 1
+  - m_Path: Armature/LegIK.L/LegPole.L
+    m_Weight: 1
+  - m_Path: Armature/LegIK.L/LegPole.L/LegPole.L_end
+    m_Weight: 1
+  - m_Path: Armature/LegIK.L/LegTarget.L
+    m_Weight: 1
+  - m_Path: Armature/LegIK.L/LegTarget.L/LegTarget.L_end
+    m_Weight: 1
+  - m_Path: Armature/LegIK.R
+    m_Weight: 1
+  - m_Path: Armature/LegIK.R/LegPole.R
+    m_Weight: 1
+  - m_Path: Armature/LegIK.R/LegPole.R/LegPole.R_end
+    m_Weight: 1
+  - m_Path: Armature/LegIK.R/LegTarget.R
+    m_Weight: 1
+  - m_Path: Armature/LegIK.R/LegTarget.R/LegTarget.R_end
+    m_Weight: 1
+  - m_Path: MeshPlayerHead
+    m_Weight: 1
+  - m_Path: MeshPlayerHead.001
+    m_Weight: 1
+  - m_Path: MeshPlayerHead.002
+    m_Weight: 1
+  - m_Path: MeshPlayerHead.003
+    m_Weight: 1
+  - m_Path: MeshPlayerHead.004
+    m_Weight: 1
+  - m_Path: MeshPlayerHead.005
+    m_Weight: 1
+  - m_Path: Plane
+    m_Weight: 1
+  - m_Path: Plane/Armature.001
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/DriverMouth
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/DriverMouth/DriverMouth_end
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/MouthLeft
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/MouthLeft/MouthLeft_end
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/MouthRight
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/MouthRight/MouthRight_end
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/MouthSmile
+    m_Weight: 1
+  - m_Path: Plane/Armature.001/MouthSmile/MouthSmile_end
+    m_Weight: 1
