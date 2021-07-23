@@ -9,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour {
 	public CamInteraction camInteraction;
 	public GameObject blockPrefab;
 
-	public ItemData item;
+	public ItemData currentItem;
 
 	void Awake() {
 		
@@ -26,11 +26,7 @@ public class PlayerInteraction : MonoBehaviour {
 
 		if (hit.collider) {
 
-			if (hit.collider.TryGetComponent(out IBreakable b)) {
-
-				b.Break(hit);
-
-			}
+			currentItem.PrimaryInteract(this, ctx, hit);
 
 		}
 
@@ -40,23 +36,22 @@ public class PlayerInteraction : MonoBehaviour {
 
 		if (hit.collider) {
 
-			Vector3 rawPos = hit.point + hit.normal * 0.5f;
+			if (hit.collider.TryGetComponent(out IInteractable b)) {
 
-			GameObject block = Instantiate(blockPrefab, 
-				RoundVector3(rawPos + Vector3.one * 0.5f) - Vector3.one * 0.5f, 
-				Quaternion.identity, null);
+				b.Interact(hit);
 
+			} else {
 
+				currentItem.SecondaryInteract(this, ctx, hit);
 
+			}
+
+			
 
 		}
 
 	}
 
-	public static Vector3 RoundVector3(Vector3 val) {
-
-		return new Vector3(Mathf.Round(val.x), Mathf.Round(val.y), Mathf.Round(val.z));
-
-	}
+	
 
 }

@@ -24,6 +24,8 @@ public class CamInteraction : MonoBehaviour {
 		new UnityEvent<InputAction.CallbackContext, RaycastHit>();
 	internal UnityEvent<InputAction.CallbackContext, RaycastHit> secondary = 
 		new UnityEvent<InputAction.CallbackContext, RaycastHit>();
+	internal UnityEvent<IInteractEnterExit, RaycastHit> crosshairEntering = 
+		new UnityEvent<IInteractEnterExit, RaycastHit>();
 
 	void PrimaryInteract(InputAction.CallbackContext ctx) {
 		if (enabled) primary.Invoke(ctx, hitInfo);
@@ -33,11 +35,29 @@ public class CamInteraction : MonoBehaviour {
 		if (enabled) secondary.Invoke(ctx, hitInfo);
 	}
 
+	RaycastHit prevHit;
+	IInteractEnterExit iee;
 	void LateUpdate() {
 		//hasHit = Physics.Raycast(rayPoint.position, rayPoint.forward, out hitInfo, 25);
 		//if (hasHit) Debug.DrawLine(rayPoint.position, hitInfo.point);
+		prevHit = hitInfo;
 
-		bool hasHit = Physics.Raycast(rayPoint.position, rayPoint.forward, out hitInfo, 25, interactionMask.value);
+		hasHit = Physics.Raycast(rayPoint.position, rayPoint.forward, out hitInfo, 25, interactionMask.value);
+
+		if (prevHit.collider != hitInfo.collider) {
+
+			IInteractEnterExit iee = null;
+
+			if (hitInfo.collider) {
+
+				iee = hitInfo.collider.GetComponent<IInteractEnterExit>();
+
+			}
+
+			crosshairEntering.Invoke(iee, hitInfo);
+
+		}
+			
 
 		if (hasHit) Debug.DrawLine(rayPoint.position, hitInfo.point);
 	}

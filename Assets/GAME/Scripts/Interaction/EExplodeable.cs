@@ -11,11 +11,15 @@ public interface IExplodable {
 
 public class EExplodeable : MonoBehaviour, IExplodable {
 
-	public QOL.FloatEvent onExplode = new QOL.FloatEvent();
+	[System.Serializable]
+	public class ExplosionEvent : UnityEvent<RaycastHit, float> { };
+
+	public ExplosionEvent onExplode = new ExplosionEvent();
+
 
 	public void Explode(RaycastHit hitInfo, float force) {
 
-		onExplode.Invoke(force);
+		onExplode.Invoke(hitInfo, force);
 
 	}
 

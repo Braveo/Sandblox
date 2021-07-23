@@ -39,10 +39,10 @@ public class SBRigAnim : MonoBehaviour {
 
 		if (pi) {
 
-			if (pi.item) {
+			if (pi.currentItem && pi.currentItem.animation.animPrimary != "") {
 
 				anim.Update(0);
-				anim.CrossFade(pi.item.animPrimary, 0.075f, 1);
+				anim.CrossFade(pi.currentItem.animation.animPrimary, 0.075f, 1);
 
 			}
 
@@ -54,10 +54,10 @@ public class SBRigAnim : MonoBehaviour {
 
 		if (pi) {
 
-			if (pi.item) {
+			if (pi.currentItem && pi.currentItem.animation.animSecondary != "") {
 
 				anim.Update(0);
-				anim.CrossFade(pi.item.animSecondary, 0.075f, 1);
+				anim.CrossFade(pi.currentItem.animation.animSecondary, 0.075f, 1);
 
 			}
 
@@ -74,7 +74,9 @@ public class SBRigAnim : MonoBehaviour {
 			0.1f,Time.deltaTime);*/
 
 		anim.SetFloat("SpeedState", 
-			baseRunCurve.Evaluate(new Vector3(pm.rb.velocity.x, 0, pm.rb.velocity.z).magnitude) * Mathf.Sign(pm.currentXYInput.sqrMagnitude),
+			baseRunCurve.Evaluate(
+				new Vector3(pm.rb.velocity.x - pm.externalForce.x, 0, pm.rb.velocity.z - pm.externalForce.z).magnitude) 
+				* Mathf.Sign(pm.currentXYInput.sqrMagnitude),
 			0.1f,Time.deltaTime);
 		anim.SetBool("Grounded", pm.isGroundedTimer < 0.03f);
 		anim.SetFloat("SpeedVertical", pm.currentVerticalSpeed);
@@ -93,6 +95,7 @@ public class SBRigAnim : MonoBehaviour {
 	}
 
 	float smoothAngle, smoothAngleVel;
+	float turnSmoothAngle, turnSmoothAngleVel;
 	internal void UpdateRotation(Vector3 dir) {
 		if (dir.sqrMagnitude != 0) {
 
@@ -100,9 +103,33 @@ public class SBRigAnim : MonoBehaviour {
 			float smoothDamping = pm.skidding ? 0.2f : 0.1f;
 			smoothAngle = Mathf.SmoothDampAngle(smoothAngle, targetAngle, ref smoothAngleVel, smoothDamping);
 
+
+
+			
+
 			anim.transform.eulerAngles = new Vector3(0, smoothAngle, 0);
+			
 
 		}
+
+		float turnTargetAngle = Vector3.Angle(dir, anim.transform.forward)/2f;
+		if (turnTargetAngle > 60) turnTargetAngle = 0;
+		if (turnTargetAngle > 30) turnTargetAngle *= 0.5f;
+		Vector3 cross = Vector3.Cross(dir, anim.transform.forward);
+
+		//USING CROSS PRODUCT ALLOWS YOU TO FIGURE OUT THE POLARITY OF THE Y VECTOR.
+		//CROSS PRODUCT IS ESSENTIALLY FINDING THE Z VECTOR WITH X AND Y. 
+		//"but pointing to one side if A is 'before' B, and to the other if A is 'after' B."
+		//https://answers.unity.com/questions/181867/is-there-way-to-find-a-negative-angle.html
+
+		if (cross.y < 0) turnTargetAngle = -turnTargetAngle;
+
+		turnSmoothAngle = Mathf.SmoothDamp(turnSmoothAngle, turnTargetAngle, ref turnSmoothAngleVel, 0.25f);
+
+		anim.transform.localEulerAngles = new Vector3
+				(anim.transform.localEulerAngles.x, 
+				anim.transform.localEulerAngles.y, 
+				turnSmoothAngle);
 	}
 
 

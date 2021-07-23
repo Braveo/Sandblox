@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 458118722956069253}
   - component: {fileID: 60969942588951111}
   - component: {fileID: 2659665106650870708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 5688234216746207275}
   - component: {fileID: 2173585781894069949}
   - component: {fileID: 7624224366331728552}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}

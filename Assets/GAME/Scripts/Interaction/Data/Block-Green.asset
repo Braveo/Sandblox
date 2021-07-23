@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738ef0090a8bde7459a79e3d4649284d, type: 3}
+  m_Name: Block-Green
+  m_EditorClassIdentifier: 
+  display:
+    itemThumbnail: {fileID: 2800000, guid: cd1c566962793bc4eba383c9c1f527f9, type: 3}
+    color: {r: 0.43614274, g: 0.9339623, b: 0.4493277, a: 1}
+    itemMaterial: {fileID: 2100000, guid: 98c02da7b7b6a8a47addbd468eaba9d1, type: 2}
+    itemHeldPrefab: {fileID: 7345797048023740655, guid: 5fc18ee08af452441834354c2fa6cb80,
+      type: 3}
+  animation:
+    animPrimary: Place
+    animSecondary: Place
+  blockPrefab: {fileID: 1394714966790810658, guid: 2e53bcd3d34311b488c18bdd8269a0c2,
+    type: 3}

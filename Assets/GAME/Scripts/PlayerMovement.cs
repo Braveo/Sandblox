@@ -61,7 +61,10 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (pi.currentActionMap.name != "Player") currentXYInput = Vector2.zero;
 		//rb.velocity = new Vector3(smoothDirection.x, currentVerticalSpeed, smoothDirection.z);
-		rb.velocity = planeNormalX * smoothDirection.x + planeNormal * currentVerticalSpeed + planeNormalZ * smoothDirection.z;
+		rb.velocity = 
+			planeNormalX * (smoothDirection.x + externalForce.x) +
+			planeNormal * (currentVerticalSpeed + externalForce.y) + 
+			planeNormalZ * (smoothDirection.z + externalForce.z);
 	}
 
 	internal Vector3 smoothDirection, smoothDirectionVel;
@@ -105,6 +108,11 @@ public class PlayerMovement : MonoBehaviour {
 	internal Vector3 planeNormal;
 	internal Vector3 planeNormalX;
 	internal Vector3 planeNormalZ;
+
+	internal Rigidbody movingRb;
+	internal Vector3 externalForce, initialExternalForce;
+	internal float timeSinceRb = 0;
+
 	internal void GroundDetection() {
 
 		bool prevGrounded = isGrounded;
@@ -145,6 +153,38 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (prevGrounded != isGrounded && isGrounded && prevVertical < 0) 
 			events.onLand.Invoke(Mathf.Abs(prevVertical) / Mathf.Abs(Physics.gravity.y));
+
+		if (isGroundedHit.rigidbody != null && isGroundedHit.rigidbody.velocity != Vector3.zero) {
+
+			ApplyExternalForce(isGroundedHit.rigidbody.velocity);
+
+		} else {
+
+			if (isGrounded) {
+
+				timeSinceRb += Time.fixedDeltaTime * 4f;
+
+				externalForce.y = 0;
+				externalForce = Vector3.Lerp(initialExternalForce, Vector3.zero, timeSinceRb);
+
+			} else {
+
+				timeSinceRb += Time.fixedDeltaTime * 0.1f;
+
+				externalForce = Vector3.Lerp(initialExternalForce, Vector3.zero, timeSinceRb);
+
+			}
+			
+		
+		}
+
+	}
+
+	public void ApplyExternalForce(Vector3 force) {
+
+		externalForce = force;
+		initialExternalForce = externalForce;
+		timeSinceRb = 0;
 
 	}
 

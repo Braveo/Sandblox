@@ -4,6 +4,7 @@ namespace EZCameraShake
 {
     public enum CameraShakeState { FadingIn, FadingOut, Sustained, Inactive }
 
+    [System.Serializable]
     public class CameraShakeInstance
     {
         /// <summary>

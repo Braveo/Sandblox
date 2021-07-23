@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738ef0090a8bde7459a79e3d4649284d, type: 3}
+  m_Name: Block-Explosive
+  m_EditorClassIdentifier: 
+  display:
+    itemThumbnail: {fileID: 2800000, guid: 03c45b2b31c8a964186e157362491378, type: 3}
+    color: {r: 1, g: 0.48584908, b: 0.48584908, a: 1}
+    itemMaterial: {fileID: 2100000, guid: 98c02da7b7b6a8a47addbd468eaba9d1, type: 2}
+    itemHeldPrefab: {fileID: 24345251547744927, guid: 3a1134d7ece65374492d0f22a32196cb,
+      type: 3}
+  animation:
+    animPrimary: Place
+    animSecondary: Place
+  blockPrefab: {fileID: 109635454240782868, guid: 41a586b8b3d1be345b49afd814b935dc,
+    type: 3}
