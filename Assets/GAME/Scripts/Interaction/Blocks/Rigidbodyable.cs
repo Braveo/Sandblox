@@ -24,4 +24,12 @@ public class Rigidbodyable : MonoBehaviour {
 
 	}
 
+	public void Kinematic() {
+		rb.isKinematic = true;
+	}
+
+	public void UnKinematic() {
+		rb.isKinematic = false;
+	}
+
 }

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Events;
+using Braveo.QOL;
 
-namespace Editor {
+#if UNITY_EDITOR
+
+namespace Braveo.QOL {
 
 	[CustomPropertyDrawer(typeof(Optional<>))]
 	public class OptionalVarPropertyDrawer : PropertyDrawer {
@@ -32,3 +35,5 @@ namespace Editor {
 	}
 
 }
+
+#endif

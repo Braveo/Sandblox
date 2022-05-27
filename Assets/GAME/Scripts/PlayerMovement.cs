@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using Braveo.QOL;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour {
 	internal PlayerInput pi;
 
 	public Transform relativeForward;
+	//public Rigidbody loopRotation;
 
 	public float walkSpeed = 6;
 	public float runSpeed = 10;
@@ -154,9 +156,12 @@ public class PlayerMovement : MonoBehaviour {
 		if (prevGrounded != isGrounded && isGrounded && prevVertical < 0) 
 			events.onLand.Invoke(Mathf.Abs(prevVertical) / Mathf.Abs(Physics.gravity.y));
 
-		if (isGroundedHit.rigidbody != null && isGroundedHit.rigidbody.velocity != Vector3.zero) {
+		if (isGroundedHit.rigidbody && isGroundedHit.rigidbody.velocity != Vector3.zero) {
 
 			ApplyExternalForce(isGroundedHit.rigidbody.velocity);
+			//rb.angularVelocity = Vector3.Scale(isGroundedHit.rigidbody.angularVelocity, Vector3.up);
+			//if (loopRotation) loopRotation.angularVelocity = Vector3.Scale(rb.angularVelocity, Vector3.up);
+			//if (loopRotation) loopRotation.rotation = Quaternion.Euler(Vector3.Scale(rb.rotation.eulerAngles, Vector3.up));
 
 		} else {
 

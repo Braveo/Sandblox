@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using EZCameraShake;
+using Braveo.QOL;
 
 //EZ CAMERA SHAKE: created by Anderson Addo
 //Show some support:

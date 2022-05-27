@@ -43,6 +43,12 @@ public class Explosion : MonoBehaviour {
 
 			}
 
+			if (insideSphere[i].TryGetComponent(out Rigidbodyable r)) {
+
+				r.UnKinematic();
+
+			}
+
 		}
 
 	}
