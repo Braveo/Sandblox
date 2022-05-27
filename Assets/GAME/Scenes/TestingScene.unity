@@ -15,18 +15,18 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.7322891, g: 0.7756446, b: 0.8301887, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.01
+  m_FogColor: {r: 0.7607844, g: 0.8588236, b: 0.92549026, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0.0005
   m_LinearFogStart: 0
   m_LinearFogEnd: 447.11
-  m_AmbientSkyColor: {r: 0.45122823, g: 0.49059147, b: 0.5660378, a: 1}
+  m_AmbientSkyColor: {r: 0.41224635, g: 0.4242098, b: 0.4528302, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8f5d62868d2447b4194999cb887ea201, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3778,14 +3778,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048712646}
-  m_LocalRotation: {x: 0.9624278, y: -0.02200685, z: 0.25788185, w: 0.08213076}
+  m_LocalRotation: {x: 0.9539433, y: -0.04064062, z: 0.25560856, w: 0.15167308}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 170.245, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 161.932, y: -30, z: 0}
 --- !u!114 &1048712649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7123,10 +7123,10 @@ LightingSettings:
   m_MixedBakeMode: 0
   m_LightmapsBakeMode: 1
   m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
   m_ExportTrainingData: 0
   m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
+  m_RealtimeResolution: 1
   m_ForceWhiteAlbedo: 0
   m_ForceUpdates: 0
   m_FinalGather: 0

@@ -1611,3 +1611,43 @@ Received Import Request.
   path: Assets/Samples/Universal RP/12.1.6/URP Package Samples/LensFlares/LensFlarePresets/Caustic2.asset
   artifactKey: Guid(ef83319819a304d5b91a52b660321577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Samples/Universal RP/12.1.6/URP Package Samples/LensFlares/LensFlarePresets/Caustic2.asset using Guid(ef83319819a304d5b91a52b660321577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e99177c5b76a311d50ac8990db06192') in 0.003371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1571.155597 seconds.
+  path: Assets/Samples/Universal RP/12.1.6/URP Package Samples/Decals/PaintSplat/PaintSplat_Mat.mat
+  artifactKey: Guid(d77f7a4cdcb2643618b950c16172ddd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Universal RP/12.1.6/URP Package Samples/Decals/PaintSplat/PaintSplat_Mat.mat using Guid(d77f7a4cdcb2643618b950c16172ddd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ab111447cbc82b8b86215c3fcf0eea') in 0.025779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Samples/Universal RP/12.1.6/URP Package Samples/CameraStacking/3D Skybox/Materials/Planet 1.mat
+  artifactKey: Guid(a5cb8f46ef6d74dad945d8966c0de9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Universal RP/12.1.6/URP Package Samples/CameraStacking/3D Skybox/Materials/Planet 1.mat using Guid(a5cb8f46ef6d74dad945d8966c0de9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484a4fe4075ee48cc02f9eeff0d2951c') in 0.353819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GAME/Exports/Player/PlayerMaterial.mat
+  artifactKey: Guid(6bddc4ae48c99684e9f03066853231ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GAME/Exports/Player/PlayerMaterial.mat using Guid(6bddc4ae48c99684e9f03066853231ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c330457d1b28707cec51cb0a15a39b') in 1.197119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Samples/Universal RP/12.1.6/URP Package Samples/Shaders/Lit/Materials/WithOcclusion.mat
+  artifactKey: Guid(615945db2db8246c39b806c45ece2fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Universal RP/12.1.6/URP Package Samples/Shaders/Lit/Materials/WithOcclusion.mat using Guid(615945db2db8246c39b806c45ece2fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa879bd6cb0179fca7fe377e17d31a34') in 1.416186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Samples/Universal RP/12.1.6/URP Package Samples/CameraStacking/3D Skybox/Materials/Planet 2.mat
+  artifactKey: Guid(c487dd3f568bf41beb93da5927d9d434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Universal RP/12.1.6/URP Package Samples/CameraStacking/3D Skybox/Materials/Planet 2.mat using Guid(c487dd3f568bf41beb93da5927d9d434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32dceba75812db6bc5abec7e604ef256') in 0.011038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Samples/Universal RP/12.1.6/URP Package Samples/SharedAssets/Materials/White.mat
+  artifactKey: Guid(ec1179175ec9b4c0c8faa41f6ee73a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Universal RP/12.1.6/URP Package Samples/SharedAssets/Materials/White.mat using Guid(ec1179175ec9b4c0c8faa41f6ee73a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7a1b5b0a71777f3dffcdd7e63b4f87') in 1.467665 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
